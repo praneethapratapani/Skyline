@@ -4,7 +4,7 @@ var parser = require('../helper_files/parser');
 var model_airports = require('../models/airports.js');
 var router = express.Router()
 
-
+//This router is used to fetch list of airports, activated by /skyline/airports
 router.use(function time_log (req, res, next) {
   console.log('Time: ', Date.now());
   next()
@@ -22,3 +22,4 @@ router.get('/', function (req, res) {
   });
 });
 module.exports = router
+
